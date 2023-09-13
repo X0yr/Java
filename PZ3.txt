@@ -1,4 +1,22 @@
-ouble c = a/b;
+import java.util.Scanner;
+
+// public class Main{
+// 	public static void main(String[] args) {
+// 	    Scanner sc = new Scanner(System.in);
+// 	    int a = sc.nextInt();
+// 	    if(a < 20){
+// 	        System.out.println("Выгоднее сделка с волком");
+// 	        a = a/2;import java.util.Scanner;
+// public class Main{
+// 	public static void main(String[] args) {
+// 		Scanner sc = new Scanner(System.in);
+// 		double a = sc.nextDouble();
+// 		double b = sc.nextDouble();
+// 		if(b == 0){
+// 		    System.out.println("Невозможно поделить на 0");
+// 		}
+// 		else{
+// 		    double c = a/b;
 // 		    System.out.println("Частное чисел a и b = "+c);
 // 		}
 // 	}
@@ -38,6 +56,9 @@ ouble c = a/b;
 // 	    else{
 // 	        System.out.println("Успел");
 // 	    }
+// 	}
+    
+// }
 // 	}
     
 // }
