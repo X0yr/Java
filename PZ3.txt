@@ -122,29 +122,38 @@ import java.util.Scanner;
 // }
 
 
-public class Main{
+public class Main
+{
 	public static void main(String[] args) {
-	        }
-	    }
-	    for(int i = 0; i<n; i++){
-	        for(int j = 0; j<mas2[i]; j++){
-	            p += mas[i][j];
-	        }
-	        mas1[i] = p;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите размер массива 2 числа: ");
+        int x = sc.nextInt(); int y = sc.nextInt(); int[][] ms = new int[x][y];
+        int max_s = 0; int id_ms = 0; boolean flag = true;
+        for (int i = 0; i < x; i++){
+            for (int k = 0; k < y; k++){
+                System.out.print("Введите число: ");
+                ms[i][k] = sc.nextInt();
+            }
+        }
+        
+        for (int i = 0; i < x; i++){
+            int count = 0;
+            for (int k = 0; k < y; k++){
+                count += ms[i][k];
+            }
+            if (count >= max_s){
+                max_s = count;
+                id_ms = i;
+            }
+        }
+        
+        System.out.println("Вывод строки массива где имеется наибольшая сумма элементов: ");
+        for (int i = id_ms; flag=true;){
+            for (int k = 0; k < y; k++){
+                System.out.print(ms[i][k] + " ");
+            }
+            break;
+        }
+        System.out.println("\nИндекс строки: " + id_ms + "\nСумма элементов: " + max_s);
 	}
-    System.out.println(mas1);
-	}
-    
-}    Scanner sc = new Scanner(System.in);
-	    int n = sc.nextInt();
-	    int[][] mas = new int[n][];
-	    int[] mas1 = new int[n];
-	    int[] mas2 = new int[n];
-	    int p = 0;
-	    for(int i = 0; i<n; i++){
-	        System.out.println("Введите количество элементов  ");
-	        int k = sc.nextInt();
-	        mas2[i] = k;
-	        for(int j = 0; j<k; j++){
-	            System.out.println("Введите элемент");
-	            mas[i][j] = sc.nextInt();
+}
