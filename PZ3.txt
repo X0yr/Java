@@ -1,0 +1,43 @@
+ouble c = a/b;
+// 		    System.out.println("Частное чисел a и b = "+c);
+// 		}
+// 	}
+// }
+
+
+// public class Main{
+// 	public static void main(String[] args) {
+// 	    Scanner sc = new Scanner(System.in);
+// 	    int a = sc.nextInt();
+// 	    if(a < 20){
+// 	        System.out.println("Выгоднее сделка с волком");
+// 	        a = a/2;
+// 	        System.out.println("Количество оставшихся пирожков = "+a);
+// 	    }
+// 	    else{
+// 	        System.out.println("Выгоднее сделка с лесничим");
+// 	        a = a-10;
+// 	        System.out.println("Количество оставшихся пирожков = "+a);
+// 	    }
+// 	}
+// }
+
+
+// public class Main{
+// 	public static void main(String[] args) {
+// 	    Scanner sc = new Scanner(System.in);
+// 	    int h = sc.nextInt();
+// 	    int m = sc.nextInt();
+// 	    int x = sc.nextInt();
+// 	    if(x/100 > h){
+// 	        System.out.println("Опаздал");
+// 	    }
+// 	    else if(x%100 > m){
+// 	        System.out.println("Опаздал");
+// 	    }
+// 	    else{
+// 	        System.out.println("Успел");
+// 	    }
+// 	}
+    
+// }
