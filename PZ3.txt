@@ -247,3 +247,108 @@ public class Main{
 // 		}
 // 	}
 // }
+
+
+
+
+
+
+
+
+//PZ_7
+import java.util.Scanner;
+// public class Main
+// {
+// 	public static void main(String[] args) {
+// 		Scanner sc = new Scanner(System.in);
+// 		int a = sc.nextInt();
+// 		String[] mas = new String[a+1];
+// 		for(int i = 0; i<=a; i++){
+// 		    String d = sc.nextLine();
+// 		    mas[i] = d;
+// 		}
+// 		String n = sc.nextLine();
+// 		String com = String.join(n, mas);
+// 		System.out.print(com.substring(1));
+// 	}
+// }
+
+
+
+// public class Main
+// {
+// 	public static void main(String[] args) {
+// 	    Scanner sc = new Scanner(System.in);
+// 	    String com = sc.nextLine();
+// 	    String com1 = sc.nextLine();
+// 	    char[] owo = com1.toCharArray();
+// 	    System.out.println(com.indexOf(owo[0]));
+// 	    System.out.println(com.lastIndexOf(owo[0]));
+// 	}
+// }
+
+
+
+// public class Main
+// {
+// 	public static void main(String[] args) {
+// 	    Scanner sc = new Scanner(System.in);
+// 	    String com = sc.nextLine();
+// 	    String com1 = sc.nextLine();
+// 	    String osnow = sc.nextLine();
+// 	    osnow = osnow.toLowerCase(); 
+// 	    int u = 0;
+// 	    int k = 0;
+// 	    String mas[] =  osnow.split(" ");
+//         System.out.println(mas);
+//         for(int i = 0; i<mas.length; i++){
+//             if(mas[i].startsWith(com)){
+//                 if(mas[i].endsWith(com1)){
+//                     u++;
+//                 }
+//             }
+//             if(mas[i].startsWith(com1)){
+//                 if(mas[i].endsWith(com)){
+//                     k++;
+//                 }
+//             }
+//         }
+//         System.out.println("Слов у Маши >>> "+u);
+//         System.out.println("Слов у Олега >>> "+k);
+// 	    }
+// 	}
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    String com = sc.nextLine();
+	    int y = 0;
+	    int k = 0;
+	    int mas1[] = new int[4];
+	    String mas[] =  com.split(".");
+	    if(com.length() > 15){
+	        System.out.println("NO");
+	        System.exit(0);
+	    }
+	    for(int i = 0; i<mas.length; i++){
+	        if(mas[i] == "."){
+	            y++;
+	            if(y>3){
+	                System.out.println("NO");
+	                System.exit(0);
+	            }
+	        }
+	    }
+	    for(int i = 0; i<mas.length; i++){
+	        if(Integer.parseInt(mas[i]) > 255 || Integer.parseInt(mas[i]) < 0){
+	            System.out.println("NO");
+	            System.exit(0);
+	        }
+	        System.out.println(mas1);
+	    }
+}
+    
+}
