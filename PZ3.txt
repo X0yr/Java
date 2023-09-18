@@ -327,28 +327,32 @@ public class Main
 	    String com = sc.nextLine();
 	    int y = 0;
 	    int k = 0;
+	    int p = 0;
 	    int mas1[] = new int[4];
-	    String mas[] =  com.split(".");
+	    String mas[] =  com.split(" ");
+	    
+	    for(int i = 0; i<mas.length; i++){
+	        if(mas[i] != " "){
+	            mas1[p] = Integer.parseInt(mas[i]);
+	            p++;
+	        }
+	    }
 	    if(com.length() > 15){
 	        System.out.println("NO");
 	        System.exit(0);
 	    }
+	    
 	    for(int i = 0; i<mas.length; i++){
-	        if(mas[i] == "."){
-	            y++;
-	            if(y>3){
+	        if(mas[i] != " "){
+	            if(mas1[k] > 255 || mas1[i] < 0){
 	                System.out.println("NO");
 	                System.exit(0);
-	            }
 	        }
+            k++;
 	    }
-	    for(int i = 0; i<mas.length; i++){
-	        if(Integer.parseInt(mas[i]) > 255 || Integer.parseInt(mas[i]) < 0){
-	            System.out.println("NO");
-	            System.exit(0);
-	        }
-	        System.out.println(mas1);
 	    }
+	    System.out.println("Yes");
+	    System.exit(0);
 }
     
 }
