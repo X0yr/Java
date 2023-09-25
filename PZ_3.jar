@@ -1,0 +1,1013 @@
+import java.util.Scanner;
+
+public class Main{
+//while циклы
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// int x = sc.nextInt();
+// int y = 1;
+// while(y < x){
+// System.out.println(y*y);
+// y++;
+// }
+// }
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// int x = sc.nextInt();
+// int y = sc.nextInt();
+// int z;
+// while (x <= y) {
+// z = x;
+// x++;
+// System.out.println(z);
+// }
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// int x = sc.nextInt();
+// int y = sc.nextInt();
+// System.out.println("");
+// while (x <= y){
+// if (x % 3 == 0 && 5 != 0) System.out.println(x);
+// x++;
+// }
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// boolean flag = true;
+// int y = 0;
+// int z = 0;
+// while(flag){
+// int x = sc.nextInt();
+// if(x==0){
+// break;
+// }
+// else{
+// z += x;
+// y++;
+// }
+// }
+// System.out.println("Ср. Ариф. чисел равен: " + (z / y));
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// boolean flag = true;
+// int y = 0;
+// while (flag){
+// int x = sc.nextInt();
+// if (x >= y){
+// y = x;
+// }
+// else if (x == 0){
+// flag = false;
+// }
+// }
+// System.out.println(y);
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// int x = sc.nextInt();
+// int y = sc.nextInt();
+// while (x <= y){
+// if(x % 2 == 0)
+// System.out.println(x);
+// x++;
+// }
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// int x = sc.nextInt();
+// int y = 2;
+// int z = 1000;
+// while(y < x){
+// if (x % y == 0){
+// if (z >= y){
+// z = y;
+// }
+// }
+// y++;
+// }
+// System.out.println(z);
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// int x = sc.nextInt();
+// int y = 1;
+// int z = 0;
+// while (y <= x){
+// if (y == 1){
+// z += y;
+// }
+// z += (y*y);
+// y++;
+// }
+// System.out.println(z-1);
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// int x = sc.nextInt();
+// int y = 1;
+// int z = 0;
+// while (x > 0){
+// y = x % 10;
+// z += y;
+// x /= 10;
+// }
+// System.out.println(z);
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// int x = 0;
+// int m = 0;
+
+// while(true){
+// int n = sc.nextInt();
+
+// if (n == 0){
+// break;
+// }
+// if (n > x){
+// m = x;
+// x = n;
+// }
+// else if(n > m){
+// m = n;
+// }
+// }
+// System.out.println("Значение второго по величине элемента " + m);
+// }
+
+//for циклы
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// System.out.println("Введите число а: ");
+// int a = sc.nextInt();
+// int b = sc.nextInt();
+// int sum = 0;
+// if(a<=b){
+// for (int i = a; i <= b; i++){
+// sum += i;
+// System.out.println(sum);
+// }
+// }
+// else{
+// System.out.println("Введено неверное значение b");
+// }
+// }
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// boolean cube = false;
+// for(;;){
+// String word = sc.nextLine();
+// if(word.equals("стоп")){
+// break;
+// }
+// if(word.equals("куб")){
+// cube = true;
+// }
+// }
+// if(cube){
+// System.out.println("YES");
+// }
+// else{
+// System.out.println("NO");
+// }
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// System.out.print("введите n кол-во чисел: ");
+// int n = sc.nextInt();
+// int min = 1000000;
+// int max = 0;
+
+// for(int i = 0; i < n; i++){
+// System.out.println("введите число: ");
+// int num = sc.nextInt();
+
+// if(num < min){
+// min = num;
+// }
+// if(num > max){
+// max = num;
+// }
+
+// }
+// System.out.println("Минимальное число: " + min);
+// System.out.println("Максимальное число: " + max);
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// System.out.println("Введите число n: ");
+// int n = sc.nextInt();
+// if (n < 0){
+// System.out.println("Ошибка");
+// return;
+// }
+// int fact = 1;
+
+// for(int i = 1; i <= n; i++){
+// fact *= i;
+//
+}
+// System.out.println("n! = " + fact);
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// System.out.print("введите n кол-во натуральных чисел: ");
+// int n = sc.nextInt();
+// int x = 1;
+// for(int i = 0; i < n; i++){
+// System.out.print("продолжить ввод чисел, Стоп - КОНЕЦ");
+// String word = sc.nextLine();
+// if(word.equals("Стоп")){
+// break;
+// }
+// else{
+// System.out.println("\nвведите число");
+// int num = sc.nextInt();
+// if(num != 0){
+// x *= num;
+// }
+// }
+// }
+// System.out.println("произведение ненулевых чисел: " + x);
+// }
+
+// public static void main(String[] agrs){
+// Scanner sc = new Scanner(System.in);
+// System.out.print("введите число N: ");
+// int n = sc.nextInt();
+// boolean flag = true;
+// for(;n > 0; n /= 2){
+// System.out.println("Число N: "+ (n % 2));
+// }
+// }
+
+public static void main(String[] agrs){
+Scanner sc = new Scanner(System.in);
+
+
+}
+два задания не доделал
+3
+//1
+// import java.util.Scanner;
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите первую строку:");
+// String a = s.nextLine();
+// System.out.println("Введите вторую строку:");
+// String b = s.nextLine();
+// System.out.println("Введите третью строку:");
+// String c = s.nextLine();
+
+// if (a.equals(b) && b.equals(c)) {
+// System.out.println("Yes");
+// } else {
+// System.out.println("No");
+// }
+// s.close();
+// }
+// }
+
+//2
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+// System.out.println("Введите первое вещественное число:");
+// double a = s.nextDouble();
+// System.out.println("Введите второе вещественное число:");
+// double b = s.nextDouble();
+// if (a == 0) {
+// System.out.println("Ошибка: нельзя делить на ноль.");
+// } else {
+// double result = a / b;
+// System.out.println("Ответ: " + result);
+// }
+// s.close();
+// }
+// }
+
+//3
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner sc = new Scanner(System.in);
+
+// System.out.println("Введите количество пирожков:");
+// int P = sc.nextInt();
+
+// if (P % 2 != 0) {
+// System.out.println("Введите четное число пирожков.");
+// } else {
+// int pirozhkiForGrandma = P / 2;
+
+// System.out.println("Красная Шапочка сможет доставить бабушке " + pirozhkiForGrandma + " пирожков.");
+// }
+
+// s.close();
+// }
+// }
+
+//4
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите часы и минуты, когда надо было проснуться:");
+// int h = s.nextInt();
+// int m = s.nextInt();
+
+// System.out.println("Введите текущее время:");
+// int x = s.nextInt();
+
+// int wupTime = h * 3600 + m * 60;
+// int currentTime = x * 3600;
+
+// if (currentTime < wupTime) {
+// System.out.println("Успел");
+// } else {
+// System.out.println("Опоздал");
+// }
+
+// s.close();
+// }
+// }
+
+//5
+// import java.util.Scanner;
+
+// public class Main{
+// public static void main(String[] args){
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите 3 целых числа");
+// int a = s.nextInt();
+// int b = s.nextInt();
+// int c = s.nextInt();
+
+// if (a>b && a>c){
+// System.out.println(a);
+// }
+// else if(b>a && b>c){
+// System.out.println(b);
+// }
+// else{
+// System.out.println(c);
+// }
+// s.close();
+// }
+// }
+
+//6
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите год:");
+// int year = s.nextInt();
+
+// boolean Year = false;
+
+// if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+// Year = true;
+// }
+
+// if (Year) {
+// System.out.println(year + " - високосный год.");
+// } else {
+// System.out.println(year + " - не високосный год.");
+// }
+
+// s.close();
+// }
+// }
+
+//7
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите первую строку:");
+// String str1 = s.nextLine();
+
+// System.out.println("Введите вторую строку:");
+// String str2 = s.nextLine();
+
+// System.out.println("Введите третью строку:");
+// String str3 = s.nextLine();
+
+// if ((str1.equals(str2) && !str2.equals(str3)) || (str2.equals(str3) && !str1.equals(str2)) || (str1.equals(str3) && !str1.equals(str2))) {
+// System.out.println("Yes");
+// } else {
+// System.out.println("No");
+// }
+
+// s.close();
+// }
+// }
+
+//8
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner scanner = new Scanner(System.in);
+// int n = scanner.nextInt();
+// int m = scanner.nextInt();
+// int k = scanner.nextInt();
+
+// if (k < n * m && (k % n == 0 || k % m == 0)) {
+// System.out.println("YES");
+// } else {
+// System.out.println("NO");
+// }
+// }
+// }
+
+//9
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+//
+Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите ваш возраст:");
+// int age = s.nextInt();
+
+// String result = (age >= 18) ? "Совершеннолетний" : "Не совершеннолетний";
+// System.out.println("Вы " + result);
+
+// s.close();
+// }
+// }
+
+//10
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите длину первого катета:");
+// double a = s.nextDouble();
+
+// System.out.println("Введите длину второго катета:");
+// double b = s.nextDouble();
+
+// double c = Math.sqrt(a * a + b * b);
+
+// System.out.println("Гипотенуза треугольника: " + c);
+
+// s.close();
+// }
+// }
+
+//11
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите длину первой стороны:");
+// int a = s.nextInt();
+
+// System.out.println("Введите длину второй стороны:");
+// int b = s.nextInt();
+
+// System.out.println("Введите длину третьей стороны:");
+// int c = s.nextInt();
+
+// boolean e = (a + b > c) && (b + c > a) && (a + c > b);
+
+// if (e) {
+// System.out.println("Yes");
+// } else {
+// System.out.println("No");
+// }
+
+// s.close();
+// }
+// }
+
+//12
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите число n:");
+// int n = s.nextInt();
+
+// String Count = (n % 10 == 1 && n % 100 != 11) ? "корова" : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? "коровы" : "коров");
+
+// System.out.println("На лугу пасется " + n + " " + Count);
+
+// s.close();
+// }
+// }
+//13
+
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите количество котлет, которые можно положить на сковородку:");
+// int k = s.nextInt();
+
+// System.out.println("Введите время обжаривания одной стороны котлеты :");
+// int m = s.nextInt();
+
+// System.out.println("Введите общее количество котлет:");
+// int n = s.nextInt();
+
+// // Вычисляем общее количество сторон котлет
+// int sides = n * 2;
+
+// // Вычисляем минимальное время обжаривания в минутах
+// int time = (sides + k - 1) / k * m;
+
+// System.out.println("Минимальное время обжаривания всех котлет: " + time + " минут");
+
+// s.close();
+// }
+// }
+
+//14
+// import java.util.Scanner;
+
+// public class Main {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+
+// System.out.println("Введите три числа: ");
+// int a = s.nextInt();
+// int b = s.nextInt();
+// int c = s.nextInt();
+
+// if (a > b) {
+// int t = a;
+// a = b;
+// b = t;
+// }
+
+// if (b > c) {
+// int t = b;
+// b = c;
+// c = t;
+// }
+
+// if (a > b) {
+// int t = a;
+// a = b;
+// b = t;
+// }
+
+// System.out.println("Упорядоченные числа: " + a + " " + b + " " + c);
+// }
+// }
+//15
+// public static void main(String[] args) {
+// // Ввод числа от пользователя
+// Scanner scanner = new Scanner(System.in);
+// System.out.print("Введите число: ");
+// int x = scanner.nextInt();
+// String rx = "";
+
+// if (x < 1 || x > 100) {
+// System.out.println("Неверный диапазон числа");
+// }
+// if(x == 1){
+// rx = "I";
+// System.out.println("Ваше число " + rx);
+// }
+// if(x == 2){
+// rx = "II";
+// System.out.println("Ваше число " + rx);
+// }
+// if(x == 3){
+// rx = "III";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 4){
+// rx = "IV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 5){
+// rx = "V";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 6){
+// rx = "VI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 7){
+// rx = "VII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 8){
+// rx = "VII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 9){
+// rx = "IX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 10){
+// rx = "X";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 11){
+// rx = "XI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 12){
+// rx =
+"XII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 13){
+// rx = "XII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 14){
+// rx = "XIV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 15){
+// rx = "XV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 16){
+// rx = "XVI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 17){
+// rx = "XVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 18){
+// rx = "XVIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 19){
+// rx = "XIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 20){
+// rx = "XX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 21){
+// rx = "XXI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 22){
+// rx = "XXII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 23){
+// rx = "XXIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 24){
+// rx = "XXIV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 25){
+// rx = "XXV";
+// System.out.print("Ваше число " + rx);
+// if(x == 26){
+// rx = "XXVI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 27){
+// rx = "XXVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 28){
+// rx = "XXVIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 29){
+// rx = "XXIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 30){
+// rx = "XXX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 31){
+// rx = "XXXI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 32){
+// rx = "XXXII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 33){
+// rx = "XXXIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 34){
+// rx = "XXXIV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 35){
+// rx = "XXXV";
+// System.out.println("Ваше число " + rx);
+// }
+// if(x == 36){
+// rx = "XXXVI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 37){
+// rx = "XXXVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 38){
+// rx = "XXXVIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 39){
+// rx = "XXXIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 40){
+// rx = "XL";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 41){
+// rx = "XLI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 42){
+// rx = "XLII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 43){
+// rx = "XLII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 44){
+// rx = "XLIV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 45){
+// rx = "XLV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 46){
+// rx = "XLVI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 47){
+// rx = "XLVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 48){
+// rx = "XLVIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 49){
+// rx = "XLIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 50){
+// rx = "L";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 51){
+// rx = "LI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 52){
+// rx = "LII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 53){
+// rx = "LIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 54){
+// rx = "LIV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 55){
+// rx = "LV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 56){
+// rx = "VI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 57){
+// rx = "LVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 58){
+// rx = "LVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 59){
+// rx = "LIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 60){
+// rx = "LX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 61){
+// rx = "LXI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 62){
+// rx = "LXII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 63){
+// rx = "LXII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 64){
+// rx = "LXIV";
+// System.out.print("Ваше число " + rx);
+//
+}
+// if(x == 65){
+// rx = "XV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 66){
+// rx = "LXVI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 67){
+// rx = "LXVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 68){
+// rx = "LXVIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 69){
+// rx = "LXIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 70){
+// rx = "LXX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 71){
+// rx = "LXXI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 72){
+// rx = "LXXII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 73){
+// rx = "LXXIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 74){
+// rx = "LXXIV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 75){
+// rx = "LXXV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 76){
+// rx = "LXXVI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 77){
+// rx = "LXXVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 78){
+// rx = "LXXVIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 79){
+// rx = "LXXIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 80){
+// rx = "LXXX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 81){
+// rx = "LXXXI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 82){
+// rx = "LXXXII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 83){
+// rx = "LXXXIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 84){
+// rx = "LXXXIV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 85){
+// rx = "LXXXV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 86){
+// rx = "LXXXVI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 87){
+// rx = "LXXXVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 88){
+// rx = "LXXXVIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 89){
+// rx = "LXXXIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 90){
+// rx = "XC";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 91){
+// rx = "XCI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 92){
+// rx = "XCII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 93){
+// rx = "XCIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 94){
+// rx = "XCIV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 95){
+// rx = "XCV";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 96){
+// rx = "XCVI";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 97){
+// rx = "XCVII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 98){
+// rx = "XCVIII";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 99){
+// rx = "XCIX";
+// System.out.print("Ваше число " + rx);
+// }
+// if(x == 100){
+// rx = "C";
+// System.out.print("Ваше число " + rx);
+// }
+// }
+// }
