@@ -1,0 +1,105 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+// 1
+// public class Main
+// {
+//      public static void main(String[] args){
+//          Scanner sc = new Scanner(System.in);
+//              ArrayList<Integer> list1 = new ArrayList<>();
+//              list1.add(1);
+//              int n = sc.nextInt();
+//              for(int i=1; i<=n; i++){
+//                  list1.add(i, 0);
+//              }
+//              list1.add(1);
+//              for(Integer chisla : list1){
+//                  System.out.print(chisla);
+//                  System.out.print(" ");
+//      }
+// }
+// }
+
+// 2
+// public class Main
+// {
+//      public static void main(String[] args){
+//          Scanner sc = new Scanner(System.in);
+//          ArrayList<String> list1 = new ArrayList<>();
+//          String str1 = sc.nextLine();
+//          int n = sc.nextInt();
+//          for(int i=0; i<n; i++){
+//              list1.add(Integer.toString(i));
+//          }
+//          int m = sc.nextInt();
+//          list1.add(m, str1);
+//          for(String chtoto : list1){
+//              System.out.print(chtoto);
+//              System.out.print(" ");
+//          }
+//      }
+// }
+
+
+// 3
+
+// public class Main
+// {
+//      public static void main(String[] args){
+//          Scanner sc = new Scanner(System.in);
+//          ArrayList<String> list1 = new ArrayList<>();
+//          String str1 = sc.nextLine();
+//          int n = sc.nextInt();
+//           for(int i=0; i<n; i++){
+//              list1.add(Integer.toString(i));
+//           }
+//           int m = sc.nextInt();
+//           list1.set(m, str1);
+//           for(String chtoto : list1){
+//              System.out.print(chtoto);
+//              System.out.print(" ");
+//      }}
+// }
+
+// 4
+// public class Main
+// {
+//      public static void main(String[] args){
+//          Scanner sc = new Scanner(System.in);
+//          ArrayList<String> list1 = new ArrayList<>();
+//          int n = sc.nextInt();
+//          for(int i=0; i<n; i++){
+//              list1.add(Integer.toString(i));
+//           }
+//           int m = sc.nextInt();
+//           list1.remove(m);
+//           for(String chtoto : list1){
+//              System.out.print(chtoto);
+//              System.out.print(" ");
+//      }
+//      }
+// }
+
+
+//5
+// public class Main
+// {
+// 	public static void main(String[] args){
+// 	    Scanner sc = new Scanner(System.in);
+// 	    ArrayList<String> list1 = new ArrayList<>();
+// 	    int n = sc.nextInt();
+// 	    int o = -1;
+// 	    for(int i = 0; i<n+1; i++){
+// 	        String str1 = sc.nextLine();
+// 	        if(str1.equals("push")){
+// 	            String str2 = sc.nextLine();
+// 	            list1.add(str2);
+// 	            o++;
+// 	        }
+// 	        if(str1.equals("pop")){
+// 	            System.out.println("Петя взял "+list1.remove(o));
+// 	        }
+// 	    }
+// 	    System.out.print(list1);
+// 	}}
