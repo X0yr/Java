@@ -222,7 +222,7 @@ public class Main{
 // for(int i = 1; i <= n; i++){
 // fact *= i;
 //
-}
+//}
 // System.out.println("n! = " + fact);
 // }
 
@@ -258,8 +258,3 @@ public class Main{
 // }
 // }
 
-public static void main(String[] agrs){
-Scanner sc = new Scanner(System.in);
-
-
-}
