@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+//public class Main{
 //while циклы
 // public static void main(String[] agrs){
 // Scanner sc = new Scanner(System.in);

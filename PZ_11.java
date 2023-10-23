@@ -85,26 +85,62 @@
 //}
 
 //4
-import java.util.Scanner;
-class PZ_11{
-    public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        int bukvi1 = scanner.nextInt();
-        int chifri1 = scanner.nextInt();
-        int bukvi2 = scanner.nextInt();
-        int chifri2 = scanner.nextInt();
-        king_step(bukvi1, chifri1, bukvi2, chifri2);
-    }
-    static int king_step(int x, int y, int x1, int y1){
-        if(x*y > 64 || x*y <= 0 || x>=9 || y>=9){
-            return 1;
-        }
-        else if(x1*y1 > 64 || x1*y1 <= 0 || x1>=9 || y1>=9 || x*y == x1*y1){
-            return 2;
-        }
-        else if(x*y > 64 || x*y <= 0){
-            System.out.println(1);
-        }
-    }
-}
+//import java.util.Scanner;
+//
+//public class PZ_11 {
+//    public static String king_step(int kingRow, int kingCol, int figureRow, int figureCol) {
+//        if (kingRow < 1 || kingRow > 8 || kingCol < 1 || kingCol > 8) {
+//            return "1";
+//        }
+//        if (figureRow < 1 || figureRow > 8 || figureCol < 1 || figureCol > 8) {
+//            return "2";
+//        }
+//        if (kingRow == figureRow && kingCol == figureCol) {
+//            return "3";
+//        }
+//
+//        if (Math.abs(kingRow - figureRow) <= 1 && Math.abs(kingCol - figureCol) <= 1) {
+//            return "YES";
+//        } else {
+//            return "NO";
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        int kingRow = scanner.nextInt();
+//        int kingCol = scanner.nextInt();
+//        int figureRow = scanner.nextInt();
+//        int figureCol = scanner.nextInt();
+//        System.out.println(king_step(kingRow, kingCol, figureRow, figureCol));
+//    }
+//}
 
+//5
+//import java.util.Scanner;
+//public class PZ_11 {
+//
+//    public static int countRoutes(int N) {
+//        if (N <= 1) {
+//            return 1;
+//        }
+//
+//        int[] dp = new int[N + 1];
+//
+//        dp[0] = 1; // Маршрут с 0 ступеньками (начальное положение мячика)
+//        dp[1] = 1; // Маршрут с 1 ступенькой
+//
+//        for (int i = 2; i <= N; i++) {
+//            dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3];
+//        }
+//
+//        return dp[N];
+//    }
+//
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        int N = scanner.nextInt();
+//        int routes = countRoutes(N);
+//        System.out.println("Число всевозможных маршрутов мячика: " + routes);
+//    }
+//}

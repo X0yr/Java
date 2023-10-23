@@ -1,21 +1,21 @@
- import java.util.Scanner;
- public class PZ_5
- {
- public static void main(String[] args) {
- Scanner s = new Scanner(System.in);
- int n = s.nextInt();
- int[] a = new int[n];
- int b = 0;
- for (int i = 0; i < n; i++){
- a[i] = s.nextInt();
- b += a[i];
- }
- System.out.println("Сумма элементов: " + b);
- for (int j = n-1; j >= 0; j--){
- System.out.print(a[j] + " ");
- }
- }
- }
+// import java.util.Scanner;
+// public class PZ_5
+// {
+// public static void main(String[] args) {
+// Scanner s = new Scanner(System.in);
+// int n = s.nextInt();
+// int[] a = new int[n];
+// int b = 0;
+// for (int i = 0; i < n; i++){
+// a[i] = s.nextInt();
+// b += a[i];
+// }
+// System.out.println("Сумма элементов: " + b);
+// for (int j = n-1; j >= 0; j--){
+// System.out.print(a[j] + " ");
+// }
+// }
+// }
 
 // public class Main
 // {
