@@ -131,7 +131,8 @@
 //        dp[1] = 1; // Маршрут с 1 ступенькой
 //
 //        for (int i = 2; i <= N; i++) {
-//            dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3];
+//            int lastindex = dp.length - 1;
+//            dp[i] = dp[i - 1] + dp[i - 2] + dp[lastindex];
 //        }
 //
 //        return dp[N];
