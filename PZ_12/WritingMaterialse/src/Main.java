@@ -1,49 +1,40 @@
 public class Main {
     public static void main(String[] args) {
-//        WritingMaterials pen = new WritingMaterials();
-//        pen.name = "ручка";
-//        pen.color = "Красный";
-//        pen.length = 15.6;
-//        pen.price = 145;
-//        pen.draw = true;
-//        pen.display();
-//        pen.draw();
-//        pen.priceDown(10);
-//        pen.display();
-//        pen.replace_rod("Синий");
-//        pen.draw();
-//
-//        WritingMaterials ruler = new WritingMaterials();
-//        ruler.name = "Линейка";
-//        ruler.length = 30.0;
-//        ruler.price = 25;
-//        ruler.draw = false;
-//        ruler.display();
-//        ruler.draw();
-//        ruler.priceUp(13);
-//        ruler.display();
+        Pen p = new Pen("Ручка", "Красный", 145, 15.6, false,
+                0, true);
+        p.display();
+        p.setName("Паркер");
+        p.setCountColor(2);
+        p.setAuto(false);
+        System.out.println(p.getCountColor());
+        System.out.println(p.isAuto());
+        p.display();
+        p.writeMyName();
 
-        WritingMaterials pen = new WritingMaterials("Ручка", "Красный", 145, 15.6, true);
-        pen.display();
-        pen.draw();
-        pen.priceDown(10);
-        pen.display();
-        pen.priceUp(23);
-        pen.display();
-        pen.replace_rod("Синий");
-        pen. draw();
+        Ruler r = new Ruler("линейка", "жёлтая", 145, 15.6, true,
+                15.6, false);
+        r.display();
+        r.setName("Линейка");
+        r.display();
+        r.setLength(25);
+        r.setWood(true);
+        System.out.println(r.getLength());
+        System.out.println(r.isWood());
+        r.display();
+        r.measure();
 
-        WritingMaterials ruler = new WritingMaterials("Линейка", 34);
-        ruler.display();
-        ruler.draw();
+        Divider d = new Divider("циркуль", "синий", 145, 15.6,
+                false, "без карандаша", false);
+        d.display();
+        d.setName("Циркуль");
+        d.display();
+        d.setDividerType("С карандашом");
+        d.setMetal(true);
+        System.out.println(d.getDividerType());
+        System.out.println(d.isMetal());
+        d.display();
+        d.draw_circle();
+        WritingMaterials u = new WritingMaterials("Имя", 16);
 
-        WritingMaterials wm1 = new WritingMaterials(23, 67.8, false);
-        wm1.display();
-        wm1.draw();
-
-        WritingMaterials wm2 = new WritingMaterials("Циркуль", "Зелёный");
-        wm2.draw = true;
-        wm2.display();
-        wm2.draw();
-    }
+   }
 }
